@@ -1,0 +1,11 @@
+<!-- list.component.html -->
+<button (click)="addItem()">Add Item</button>
+<br>
+<br>
+<button (click)="toggle()">Show / Hide Items</button>
+<hr />
+<div [@listAnimation]="items.length">
+  <div *ngFor="let item of items">
+    {{ item }}
+  </div>
+</div>
